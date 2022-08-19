@@ -1,6 +1,8 @@
 # Pornscript
 
-an esoteric programming language that is designed to make programming dirty. The langugage uses dirty keywords instead of the regular ones. It's still in it's early steps and needs a lot to work on.
+an esoteric programming language that is designed to make programming dirty. Make sure your cpu doesn't heat up :| 
+
+Pornscript in it's early stage and needs a lot to work on.
 
 ![capture1](https://user-images.githubusercontent.com/109735783/185616635-7129f29b-8ed5-4c08-903f-82047d8c66be.PNG)
 
