@@ -43,9 +43,9 @@ now run the jar file again and it will print hello world to the console.
 
 # Variables
 	
-In pornscript you don't define variables. But there are 4- pre defined variables. One is stored between the tits. One is stored in the butt. One is stored in the pussy and one is stored in the mouth
+In pornscript you don't define variables. But there are 4 pre-defined variables. One is stored between the tits. One is stored in the butt. One is stored in the pussy and one is stored in the mouth
 	
-for example, in this image we use the 'put' commands to store 4 variables and then print (moan) them
+for example, in this image we use the 'put' command to store 4 variables and then moan them to the console
 
 ![capture6](https://user-images.githubusercontent.com/109735783/185618185-33cb10b4-df68-4424-ae10-fd8b7397883d.PNG)
 
