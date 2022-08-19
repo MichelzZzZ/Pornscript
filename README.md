@@ -2,7 +2,7 @@
 
 an esoteric programming language that is designed to make programming dirty. Make sure your cpu doesn't heat up :| 
 
-Pornscript in it's early stage and needs a lot to work on.
+Pornscript is in it's early stage and needs a lot to work on.
 
 ![capture1](https://user-images.githubusercontent.com/109735783/185616635-7129f29b-8ed5-4c08-903f-82047d8c66be.PNG)
 
