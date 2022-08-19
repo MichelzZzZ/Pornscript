@@ -61,3 +61,8 @@ You can also use your input directly with the moan command. This will take input
 
 ![capture8](https://user-images.githubusercontent.com/109735783/185619630-ded9d2e8-cb8a-4a6d-8cd1-684d584c45be.PNG)
 	
+# Comments
+
+As simple as this
+	
+![capture9](https://user-images.githubusercontent.com/109735783/185621040-454a595c-a19a-497e-95bd-0761ee8b67ce.PNG)
