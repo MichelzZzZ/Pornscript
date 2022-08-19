@@ -7,7 +7,7 @@ Pornscript is in it's early stage and needs a lot to work on.
 ![capture1](https://user-images.githubusercontent.com/109735783/185616635-7129f29b-8ed5-4c08-903f-82047d8c66be.PNG)
 
 
-Pornscript is written in Java means you can run it on most operating systems. The toutorial below uses windows. but if you're on a different operating system., you'll only have to use a different method to run the jar file.
+Pornscript is written in Java means you can run it on most operating systems. The tutorial below uses windows. but if you're on a different operating system., you'll only have to use a different method to run the jar file.
 
 # Hello world
 
