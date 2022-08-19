@@ -9,7 +9,7 @@ Pornscript is written in Java means you can run it on most operating systems. Th
 
 # Hello world
 
-To start your way around pornscript. download the "pornscript.jar" file. You also want to make sure you hava Java 17 ( or newer ) installed and setup.
+To start your way around pornscript. download the "pornscript.jar" file. You also want to make sure you have Java 17 ( or newer ) installed and setup.
 
 ![capture1](https://user-images.githubusercontent.com/109735783/185615388-21d03cc0-edfd-4449-b6cb-95bc1d137890.PNG)
 
