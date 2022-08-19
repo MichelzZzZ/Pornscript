@@ -1,9 +1,15 @@
 # Pornscript
 
+Unlike the popular esoteric laguages that are designed to make prorgramming harder. Pornscript is designed to be dirty. The langugage uses dirty keywords instead of the regular ones. It's still in it's early steps and needs a lot to work on.
+
+![capture1](https://user-images.githubusercontent.com/109735783/185616635-7129f29b-8ed5-4c08-903f-82047d8c66be.PNG)
+
+
+Pornscript is written in Java means you can run it on most operating systems. The toutorial below uses windows. but if you're on a different operating system., you'll only have to use a different method to run the jar file.
 
 # Hello world
 
-To start your way around pornscript. download the "pornscript.jar" file. You also want to make sure you hava Java 17 or newer installed
+To start your way around pornscript. download the "pornscript.jar" file. You also want to make sure you hava Java 17 ( or newer ) installed and setup.
 
 ![capture1](https://user-images.githubusercontent.com/109735783/185615388-21d03cc0-edfd-4449-b6cb-95bc1d137890.PNG)
 
@@ -33,3 +39,25 @@ now run the jar file again and it will print hello world to the console.
 	
 ![capture5](https://user-images.githubusercontent.com/109735783/185615527-9b47c71f-cf66-4c2f-822a-d78a0fc389ce.PNG)
 
+# Variables
+	
+In pornscript you don't define variables. But there are 4- pre defined variables. One is stored between the tits. One is stored in the butt. One is stored in the pussy and one is stored in the mouth
+	
+for example, in this image we use the 'put' commands to store 4 variables and then print (moan) them
+
+![capture6](https://user-images.githubusercontent.com/109735783/185618185-33cb10b4-df68-4424-ae10-fd8b7397883d.PNG)
+
+make sure to not leave extra spaces because pornscript is sensetive about that
+	
+# User Input
+	
+to take user input use the 'your input' keyword. in the following example it asks the user for his name then it greets him
+	
+![capture7](https://user-images.githubusercontent.com/109735783/185619368-6d1bd13c-fc89-4e32-9d9a-68f10aba1c87.PNG)
+![capture7-2](https://user-images.githubusercontent.com/109735783/185620017-3901b8c3-42a6-4743-8f4c-d2c97c8f512a.PNG)
+
+
+You can also use your input directly with the moan command. This will take input and directly print the user name
+
+![capture8](https://user-images.githubusercontent.com/109735783/185619630-ded9d2e8-cb8a-4a6d-8cd1-684d584c45be.PNG)
+	
