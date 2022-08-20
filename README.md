@@ -21,7 +21,7 @@ now open command propmt as adminisator, type 'java -jar pornscriptpath' and pres
 ![capture2](https://user-images.githubusercontent.com/109735783/185615405-62a754cc-effa-4ad0-8234-50966fe96eb3.PNG)
 
 
-it will automaticly create a system file called 'script.ps'. To open it, type 'script.ps' in command prompt and press enter
+it will automaticly create a system file for pornscript. To open it, type 'script.ps' in command prompt and press enter
 	
 ![capture3](https://user-images.githubusercontent.com/109735783/185615434-dba9f79f-a6f8-4529-93d7-87fb6bea1c89.PNG)
 
