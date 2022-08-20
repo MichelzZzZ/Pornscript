@@ -649,27 +649,6 @@ public class VariableStore
 		
 	}
 	
-	/*
-	 * 
-	 * The same as the previous method but only works for the butt or the pussy<br>
-	 * 
-	 * This is used by some command like "stick it deeper in" and "take it a little of"
-	 * 
-	 */
-	public int validateFuckableAddress(String str) throws UnavailableAddressException
-	{
-		
-		switch(str)
-		{
-		
-		case "my butt" 			: return 1;
-		case "my pussy" 		: return 2;
-		default: throw new UnavailableAddressException(str + " is not a valid address");
-		
-		}
-		
-	}
-	
 
 	// Used by the put command
 	
