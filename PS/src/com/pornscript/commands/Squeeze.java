@@ -557,30 +557,33 @@
   *             
   */
 
-package com.pornscript.exceptions;
+package com.pornscript.commands;
+
+import com.pornscript.exceptions.TooFewArgumentsException;
+import com.pornscript.exceptions.TooManyArgumentsException;
+import com.pornscript.interfaces.Command;
 
 /**
  * 
- * Thrown when the user tries to access a variable that isn't one of <br>
- * the main four varibales:
+ * Concat to string
  * 
- * <ul>
- * 		<li> The tits </li>
- * 		<li> The butt </li>
- * 		<li> The pussy </li>
- * 		<li> The mouth </li>
- * </ul>
- *
  */
 
-public class UnavailableAddressException extends Exception
+public class Squeeze
 {
-
-	public UnavailableAddressException(String str)
+	
+	public static final Command i = (args, vsRefrence) ->
 	{
 		
-		super(str);
+		if(args.length < 3)
+			throw new TooFewArgumentsException("the squeeze command needs exactly three arguments");
 		
-	}
+		if(args.length > 3)
+			throw new TooManyArgumentsException("the squeeze command needs exactly three arguments");
+		
+		
+		vsRefrence.concatVariable(args[1], args[2]);
+		
+	};
 	
 }
