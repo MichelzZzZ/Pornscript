@@ -62,11 +62,6 @@ to take user input use the 'your dick' keyword. in the following example it asks
 ![capture7](https://user-images.githubusercontent.com/109735783/185734580-29a47dfc-65c9-42e7-8ec1-2a6117d9f92f.PNG)
 ![capture8](https://user-images.githubusercontent.com/109735783/185734582-26d27132-500c-4f4f-b58c-cdce2d58e1d7.PNG)
 
-
-You can also use the "your dick" keyword directly with the "moan" keyword. This will take input and directly print the user name
-
-![capture9](https://user-images.githubusercontent.com/109735783/185734599-4c17a0fb-cbe6-478e-896a-b582917a2f83.PNG)
-
 	
 # Comments
 
