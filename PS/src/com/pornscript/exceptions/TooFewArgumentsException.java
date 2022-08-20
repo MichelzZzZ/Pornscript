@@ -562,7 +562,7 @@ package com.pornscript.exceptions;
 /**
  * 
  * Thrown when the keyword expects a specific amount of arugments <br>
- * and doesn't gets too few
+ * and gets too few
  *
  */
 
