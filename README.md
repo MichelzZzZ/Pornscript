@@ -62,11 +62,6 @@ to take user input use the 'your dick' keyword. in the following example it asks
 ![capture7](https://user-images.githubusercontent.com/109735783/185734580-29a47dfc-65c9-42e7-8ec1-2a6117d9f92f.PNG)
 ![capture8](https://user-images.githubusercontent.com/109735783/185734582-26d27132-500c-4f4f-b58c-cdce2d58e1d7.PNG)
 
-	
-# Comments
-
-![capture10](https://user-images.githubusercontent.com/109735783/185734619-15f3c316-d7a4-49bb-8401-faf84882aaf8.PNG)
-
 # Copying variables
 
 ![capture11](https://user-images.githubusercontent.com/109735783/185745831-50e291c3-7e9d-4fa4-b65e-913d206f2a67.PNG)
