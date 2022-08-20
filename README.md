@@ -70,5 +70,13 @@ You can also use the "your dick" keyword directly with the "moan" keyword. This 
 	
 # Comments
 
-To comment your code use the 'cumment' keyword
 ![capture10](https://user-images.githubusercontent.com/109735783/185734619-15f3c316-d7a4-49bb-8401-faf84882aaf8.PNG)
+
+# Copying variables
+
+![capture11](https://user-images.githubusercontent.com/109735783/185745831-50e291c3-7e9d-4fa4-b65e-913d206f2a67.PNG)
+
+# Concating strings
+
+![capture12](https://user-images.githubusercontent.com/109735783/185745844-54d8ba9f-f6b7-4ad0-b032-0c358bd4564e.PNG)
+
