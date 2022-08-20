@@ -559,6 +559,8 @@
 
 package com.pornscript.commands;
 
+import com.pornscript.exceptions.TooFewArgumentsException;
+import com.pornscript.exceptions.TooManyArgumentsException;
 import com.pornscript.interfaces.Command;
 
 /**
@@ -576,6 +578,13 @@ public class StickItDeeper
 	
 	public static final Command i = (args, vsRefrence) -> 
 	{
+		
+		if(args.length < 2)
+			throw new TooFewArgumentsException("the stick it deeper command needs exactly two arguments");
+		
+		if(args.length > 2)
+			throw new TooManyArgumentsException("the stick it deeper command needs exactly two arguments");
+		
                        
 		int newValue = Integer.parseInt(vsRefrence.getVariable(args[1]));
   		
