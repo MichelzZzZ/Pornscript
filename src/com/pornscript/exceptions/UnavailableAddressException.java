@@ -677,13 +677,12 @@ Public License instead of this License.  But first, please read
  * 
  */
 
-
 package com.pornscript.exceptions;
 
-public class TooFewArgumentsException extends Exception
+public class UnavailableAddressException extends Exception
 {
 
-	public TooFewArgumentsException(String str)
+	public UnavailableAddressException(String str)
 	{
 		
 		super(str);
