@@ -688,14 +688,5 @@ public class VariableStore
 		vars[validateAddress(index)] += validateText(content);
 				
 	}
-	
-	// Used by the stick and Take command
-	
-	public String getVariable(String index) throws UnavailableAddressException
-	{
-		
-		return vars[validateFuckableAddress(index)];
-		
-	}
 
 }
