@@ -57,18 +57,18 @@ make sure to not leave extra spaces because pornscript is sensetive about that
 	
 # User Input
 	
-to take user input use the 'your input' keyword. in the following example it asks the user for their name then greets them
+to take user input use the 'your dick' keyword. in the following example it asks the user for their name then greets them
 	
-![capture7](https://user-images.githubusercontent.com/109735783/185619368-6d1bd13c-fc89-4e32-9d9a-68f10aba1c87.PNG)
-![capture7-2](https://user-images.githubusercontent.com/109735783/185620017-3901b8c3-42a6-4743-8f4c-d2c97c8f512a.PNG)
+![capture7](https://user-images.githubusercontent.com/109735783/185734580-29a47dfc-65c9-42e7-8ec1-2a6117d9f92f.PNG)
+![capture8](https://user-images.githubusercontent.com/109735783/185734582-26d27132-500c-4f4f-b58c-cdce2d58e1d7.PNG)
 
 
-You can also use your input directly with the moan command. This will take input and directly print the user name
+You can also use the "your dick" keyword directly with the "moan" keyword. This will take input and directly print the user name
 
-![capture8](https://user-images.githubusercontent.com/109735783/185619630-ded9d2e8-cb8a-4a6d-8cd1-684d584c45be.PNG)
+![capture9](https://user-images.githubusercontent.com/109735783/185734599-4c17a0fb-cbe6-478e-896a-b582917a2f83.PNG)
+
 	
 # Comments
 
-As simple as this
-	
-![capture9](https://user-images.githubusercontent.com/109735783/185621040-454a595c-a19a-497e-95bd-0761ee8b67ce.PNG)
+To comment your code use the 'cumment' keyword
+![capture10](https://user-images.githubusercontent.com/109735783/185734619-15f3c316-d7a4-49bb-8401-faf84882aaf8.PNG)
