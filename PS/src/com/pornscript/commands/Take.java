@@ -557,145 +557,41 @@
   *             
   */
 
-package com.pornscript.process;
+package com.pornscript.commands;
 
-import java.util.Scanner;
-
-import com.pornscript.exceptions.UnavailableAddressException;
+import com.pornscript.exceptions.TooFewArgumentsException;
+import com.pornscript.exceptions.TooManyArgumentsException;
+import com.pornscript.interfaces.Command;
 
 /**
  * 
- * The variable store is <mark>obviously</mark> used to store variables <br><br>
+ * Converts to int.
+ * dcreement the value by one
+ * Convert back to string
  * 
- * in pornscript. you can temporarly store vairables between the tits, in the butt <br>
- * in the pussy or in the mouth <br><br>
+ * if the given value isn't an int. it will throw an error
  * 
- * The variable store uses a one dimension array of string. where <br><br>
- * 
- * index 0 = tits <br>
- * index 1 = butt <br>
- * index 2 = pussy <br>
- * index 3 = mouth <br>
- *
  */
-public class VariableStore 
+
+public class Take 
 {
 	
-	private Scanner sc;
-	private String[] vars;
-	
-	VariableStore()
+	public static final Command i = (args, vsRefrence) -> 
 	{
 		
-		sc = new Scanner(System.in);
-		vars = new String[4];
+		if(args.length < 2)
+			throw new TooFewArgumentsException("the stick it deeper command needs exactly two arguments");
 		
-	}
+		if(args.length > 2)
+			throw new TooManyArgumentsException("the stick it deeper command needs exactly two arguments");
+		
+                       
+		int newValue = Integer.parseInt(vsRefrence.getVariable(args[1]));
+  		
+  		newValue--;
+  		
+  		vsRefrence.setVariable(String.valueOf(newValue), args[1]);
+                             
+	};
 	
-	/**
-	 * 
-	 * This is used to validate a text before printing it. <br> <br>
-	 * 
-	 * If it says "i will show you my tits" print the tits variable <br>
-	 * If it says "i will show you my butt" print the butt variable <br>
-	 * If it says "i will show you my pussy" print the pussy variable <br>
-	 * If it says "i will show you my mouth" print the mouth variable <br>
-	 * 
-	 * 
-	 */
-	public String validateText(String str)
-	{
-		
-		switch(str)
-		{
-		
-		case "i will show you my tits" 	: return vars[0];
-		case "i will show you my butt" 	: return vars[1];
-		case "i will show you my pussy" : return vars[2];
-		case "i will show you my mouth" : return vars[3];
-		case "your dick"				: return sc.nextLine();
-		default: return str;
-		
-		}
-		
-	}
-	
-	/**
-	 * 
-	 * This validates a variable address<br>
-	 * used with the "put" command<br>
-	 * 
-	 * if it says "put:something:between my tits" 		add it to index 0<br>
-	 * if it says "put:something:in my butt" 			add it to index 1<br>
-	 * if it says "put:something:in my pussy"	 		add it to index 2<br>
-	 * if it says "put:something:in my mouth"			add it to index 3<br><br>
-	 * 
-	 * else throw an unavailable adress Exception
-	 * 
-	 */
-	public int validateAddress(String str) throws UnavailableAddressException
-	{
-		
-		switch(str)
-		{
-		
-		case "between my tits" 	: return 0;
-		case "in my butt" 		: return 1;
-		case "in my pussy" 		: return 2;
-		case "in my mouth" 		: return 3;
-		default: throw new UnavailableAddressException(str + " is not a valid address");
-		
-		}
-		
-	}
-	
-	/*
-	 * 
-	 * The same as the previous method but only works for the butt or the pussy<br>
-	 * 
-	 * This is used by some command like "stick it deeper in" and "take it a little of"
-	 * 
-	 */
-	public int validateFuckableAddress(String str) throws UnavailableAddressException
-	{
-		
-		switch(str)
-		{
-		
-		case "my butt" 			: return 1;
-		case "my pussy" 		: return 2;
-		default: throw new UnavailableAddressException(str + " is not a valid address");
-		
-		}
-		
-	}
-	
-
-	// Used by the put command
-	
-	public void setVariable(String content, String index) throws UnavailableAddressException
-	{
-		
-		vars[validateAddress(index)] = validateText(content);
-				
-	}
-	
-	// Used by the squeeze command
-	
-	public void concatVariable(String content, String index) throws UnavailableAddressException
-	{
-		
-		vars[validateAddress(index)] += validateText(content);
-				
-	}
-	
-	// Used by the stick and Take command
-	
-	public String getVariable(String index) throws UnavailableAddressException
-	{
-		
-		return vars[validateFuckableAddress(index)];
-		
-	}
-
 }

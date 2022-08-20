@@ -573,7 +573,7 @@ import com.pornscript.interfaces.Command;
  * 
  */
 
-public class StickItDeeper 
+public class Stick 
 {
 	
 	public static final Command i = (args, vsRefrence) -> 
