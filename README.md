@@ -68,5 +68,20 @@ to take user input use the 'your dick' keyword. in the following example it asks
 
 # Concating strings
 
-![capture12](https://user-images.githubusercontent.com/109735783/185745844-54d8ba9f-f6b7-4ad0-b032-0c358bd4564e.PNG)
+![capture12](https://user-images.githubusercontent.com/109735783/185789937-4475686c-ea3a-4078-969c-f724f689303b.PNG)
 
+# Addition
+
+![capture13](https://user-images.githubusercontent.com/109735783/185789974-cac38700-4ced-49ef-bd7b-9763b0fe1821.PNG)
+
+# Substraction
+
+![capture14](https://user-images.githubusercontent.com/109735783/185789983-47f5a68b-fac1-4503-8d51-ff6cde159fb7.PNG)
+
+# Comments
+
+![capture15](https://user-images.githubusercontent.com/109735783/185789993-10e7ced2-b0d5-4a91-b19f-9d83a5d39384.PNG)
+
+# A program that takes two numbers from the user and adds them
+
+![capture16](https://user-images.githubusercontent.com/109735783/185790032-3f457cf7-76e5-413c-8874-469b687a7047.PNG)
