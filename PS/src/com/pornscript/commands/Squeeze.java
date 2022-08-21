@@ -576,11 +576,11 @@ public class Squeeze
 	{
 		
 		if(args.length < 3)
-			throw new TooFewArgumentsException("the squeeze command needs exactly three arguments");
+			throw new TooFewArgumentsException("the squeeze command expects exactly three arguments");
 		
 		if(args.length > 3)
-			throw new TooManyArgumentsException("the squeeze command needs exactly three arguments");
-		
+			throw new TooManyArgumentsException("the squeeze command expects exactly three arguments");
+	
 		
 		vsRefrence.concatVariable(args[1], args[2]);
 		

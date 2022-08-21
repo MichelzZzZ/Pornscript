@@ -594,7 +594,7 @@ public class VariableStore
 	
 	/**
 	 * 
-	 * This is used to validate a text before printing it. <br> <br>
+	 * This is used to translate a text before printing it. <br> <br>
 	 * 
 	 * If it says "i will show you my tits" print the tits variable <br>
 	 * If it says "i will show you my butt" print the butt variable <br>
@@ -603,7 +603,7 @@ public class VariableStore
 	 * 
 	 * 
 	 */
-	public String validateText(String str)
+	public String translateText(String str)
 	{
 		
 		switch(str)
@@ -622,7 +622,7 @@ public class VariableStore
 	
 	/**
 	 * 
-	 * This validates a variable address<br>
+	 * This translates a variable address<br>
 	 * used with the "put" command<br>
 	 * 
 	 * if it says "put:something:between my tits" 		add it to index 0<br>
@@ -633,7 +633,7 @@ public class VariableStore
 	 * else throw an unavailable adress Exception
 	 * 
 	 */
-	public int validateAddress(String str) throws UnavailableAddressException
+	private int translateAddress(String str) throws UnavailableAddressException
 	{
 		
 		switch(str)
@@ -649,13 +649,13 @@ public class VariableStore
 		
 	}
 	
-
-	// Used by the put command
 	
+	// Used by the put command
+
 	public void setVariable(String content, String index) throws UnavailableAddressException
 	{
 		
-		vars[validateAddress(index)] = validateText(content);
+		vars[translateAddress(index)] = translateText(content);
 				
 	}
 	
@@ -664,8 +664,84 @@ public class VariableStore
 	public void concatVariable(String content, String index) throws UnavailableAddressException
 	{
 		
-		vars[validateAddress(index)] += validateText(content);
+		vars[translateAddress(index)] += translateText(content);
 				
+	}
+	
+	// Used by the put more command
+	
+	public void addVariable(String content, String index) throws UnavailableAddressException
+	{
+		
+		/*
+		 * 
+		 * this is used for mathematical operations
+		 * for example:
+		 * put:5:more:in my pussy
+		 * 
+		 * 'a' holds the value 5 and
+		 * 'b' holds the value of the pussy variable
+		 *	
+		 */
+		
+		String a = translateText(content);
+		String b = vars[translateAddress(index)];
+		
+		/*
+		 * 
+		 * now 'a' and 'b' will be parsed as integers
+		 * 
+		 */
+		
+		int aInt = Integer.parseInt(a);
+		int bInt = Integer.parseInt(b);
+		
+		/*
+		 * 
+		 * add a and b then parse them back to strings
+		 * 
+		 */
+		
+		vars[translateAddress(index)] = String.valueOf(bInt + aInt);
+		
+	}
+	
+	// Used by the put less command
+	
+	public void substractVariable(String content, String index) throws UnavailableAddressException
+	{
+		
+		/*
+		 * 
+		 * this is used for mathematical operations
+		 * for example:
+		 * put:5:less:in my pussy
+		 * 
+		 * 'a' holds the value 5 and
+		 * 'b' holds the value of the pussy variable
+		 *	
+		 */
+		
+		String a = translateText(content);
+		String b = vars[translateAddress(index)];
+		
+		/*
+		 * 
+		 * now 'a' and 'b' will be parsed as integers
+		 * 
+		 */
+		
+		int aInt = Integer.parseInt(a);
+		int bInt = Integer.parseInt(b);
+		
+		/*
+		 * 
+		 * substract a and b then parse them back to strings
+		 * 
+		 */
+		
+		vars[translateAddress(index)] = String.valueOf(bInt - aInt);
+		
 	}
 
 }

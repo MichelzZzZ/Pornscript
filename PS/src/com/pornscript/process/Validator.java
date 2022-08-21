@@ -564,6 +564,8 @@ import java.util.Scanner;
 
 import com.pornscript.commands.Moan;
 import com.pornscript.commands.Put;
+import com.pornscript.commands.PutLess;
+import com.pornscript.commands.PutMore;
 import com.pornscript.commands.Squeeze;
 import com.pornscript.exceptions.IllegalSyntaxException;
 import com.pornscript.exceptions.TooFewArgumentsException;
@@ -591,6 +593,8 @@ public class Validator
 		
 		keywords.put("moan", Moan.i);
 		keywords.put("put", Put.i);
+		keywords.put("put more", PutMore.i);
+		keywords.put("put less", PutLess.i);
 		keywords.put("squeeze", Squeeze.i);
 		
 		vs = new VariableStore();

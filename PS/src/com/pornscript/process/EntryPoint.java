@@ -608,8 +608,8 @@ public class EntryPoint
 		
 		if(!sc.nextLine().startsWith("WHAT ARE YOU DOING STEPBRO!!"))
 			throw new IllegalSyntaxException("Every pornscript folder should start with the classic opening: \n WHAT ARE YOU DOING STEPBRO!!");
-		else
-			new Validator().iterateThroughScanner(sc);
+		
+		new Validator().iterateThroughScanner(sc);
 		
 	}
 

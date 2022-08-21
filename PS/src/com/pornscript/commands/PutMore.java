@@ -569,20 +569,20 @@ import com.pornscript.interfaces.Command;
  * 
  */
 
-public class Put 
+public class PutMore 
 {
 	
 	public static final Command i = (args, vsRefrence) ->
 	{
 		
 		if(args.length < 3)
-			throw new TooFewArgumentsException("the put command expects exactly three arguments");
+			throw new TooFewArgumentsException("the put more command expects exactly three arguments");
 		
 		if(args.length > 3)
-			throw new TooManyArgumentsException("the put command expects exactly three arguments");
+			throw new TooManyArgumentsException("the put more command expects exactly three arguments");
 		
 		
-		vsRefrence.setVariable(args[1], args[2]);
+		vsRefrence.addVariable(args[1], args[2]);
 		
 	};
 
