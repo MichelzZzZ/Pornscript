@@ -84,4 +84,4 @@ to take user input use the 'your dick' keyword. in the following example it asks
 
 # A program that takes two numbers from the user and adds them
 
-![capture16](https://user-images.githubusercontent.com/109735783/185790032-3f457cf7-76e5-413c-8874-469b687a7047.PNG)
+![capture16](https://user-images.githubusercontent.com/109735783/185790278-5a6ca2da-3ac4-4fee-ad33-859d887f882f.PNG)
