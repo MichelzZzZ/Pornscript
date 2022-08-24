@@ -559,6 +559,7 @@
 
 package com.pornscript.process;
 
+import java.util.Random;
 import java.util.Scanner;
 
 import com.pornscript.exceptions.UnavailableAddressException;
@@ -582,12 +583,14 @@ public class VariableStore
 {
 	
 	private Scanner sc;
+	private Random rnd;
 	private String[] vars;
 	
 	VariableStore()
 	{
 		
 		sc = new Scanner(System.in);
+		rnd = new Random();
 		vars = new String[4];
 		
 	}
@@ -614,6 +617,7 @@ public class VariableStore
 		case "i will show you my pussy" : return vars[2];
 		case "i will show you my mouth" : return vars[3];
 		case "your dick"				: return sc.nextLine();
+		case "random amount"			: return String.valueOf(rnd.nextInt(0, 100));
 		default: return str;
 		
 		}
@@ -648,6 +652,7 @@ public class VariableStore
 		}
 		
 	}
+	
 	
 	
 	// Used by the put command
