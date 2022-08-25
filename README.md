@@ -16,7 +16,7 @@ To start your way around pornscript, download the "pornscript.jar" file. You als
 ![capture1](https://user-images.githubusercontent.com/109735783/185615388-21d03cc0-edfd-4449-b6cb-95bc1d137890.PNG)
 
 
-now open command propmt, type 'java -jar pornscriptpath' and press enter
+now open command propmt, type 'java -jar path' and press enter
   
 ![capture2](https://user-images.githubusercontent.com/109735783/185615405-62a754cc-effa-4ad0-8234-50966fe96eb3.PNG)
 
