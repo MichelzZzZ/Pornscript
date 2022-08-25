@@ -136,16 +136,52 @@ public class VariableStore
 		vars[deformatAddress(index)] += deformatText(content);
 				
 	}
-
-	// Used by the put more command
 	
-	public void addVariable(String content, String index) throws UnavailableAddressException
+	// Used by the 'if i have' and 'if i dont have' command
+	
+	public boolean isEqual(String content, String index) throws UnavailableAddressException
 	{
-
+			
+		return vars[deformatAddress(index)].equals(deformatText(content));
+			
+	}
+	
+	// Used by the 'if i have more' command
+	
+	public boolean isLarger(String content, String index) throws UnavailableAddressException
+	{
 		
 		String a = deformatText(content);
 		String b = vars[deformatAddress(index)];
 		
+		int aInt = Integer.parseInt(a);
+		int bInt = Integer.parseInt(b);
+		
+		
+		return bInt >= aInt;
+			
+	}
+	// Used by the 'if i have less than' command
+	
+	public boolean isSmaller(String content, String index) throws UnavailableAddressException
+	{
+			
+		String a = deformatText(content);
+		String b = vars[deformatAddress(index)];
+			
+		int aInt = Integer.parseInt(a);
+		int bInt = Integer.parseInt(b);
+			
+		return bInt <= aInt;
+				
+	}
+	// Used by the put more command
+	
+	public void add(String content, String index) throws UnavailableAddressException
+	{
+
+		String a = deformatText(content);
+		String b = vars[deformatAddress(index)];
 
 		int aInt = Integer.parseInt(a);
 		int bInt = Integer.parseInt(b);
@@ -157,13 +193,11 @@ public class VariableStore
 
 	// Used by the put less command
 	
-	public void substractVariable(String content, String index) throws UnavailableAddressException
+	public void substract(String content, String index) throws UnavailableAddressException
 	{
-		
 		
 		String a = deformatText(content);
 		String b = vars[deformatAddress(index)];
-		
 		
 		int aInt = Integer.parseInt(a);
 		int bInt = Integer.parseInt(b);

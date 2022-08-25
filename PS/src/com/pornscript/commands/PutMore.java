@@ -13,6 +13,8 @@
 */
 package com.pornscript.commands;
 
+import java.util.Scanner;
+
 import com.pornscript.exceptions.TooFewArgumentsException;
 import com.pornscript.exceptions.TooManyArgumentsException;
 import com.pornscript.exceptions.UnavailableAddressException;
@@ -36,7 +38,7 @@ public class PutMore implements Command
 {
 
 	@Override
-	public void run(String[] args, VariableStore vsRefrence) throws UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException 
+	public void run(String[] args, VariableStore vsRefrence, Scanner scRefrence) throws UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException 
 	{
 		
 
@@ -47,7 +49,7 @@ public class PutMore implements Command
 			throw new TooManyArgumentsException("the put more command expects exactly three arguments");
 		
 		
-		vsRefrence.addVariable(args[1], args[2]);
+		vsRefrence.add(args[1], args[2]);
 		
 	};
 

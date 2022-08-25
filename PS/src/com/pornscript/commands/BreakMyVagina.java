@@ -23,34 +23,21 @@ import com.pornscript.process.VariableStore;
 
 /**
  * 
- * The put less command substracts two numbers. it expects exactly
- * three arguments.<br>
- * 
- * <ol>
- * 		<li> The 'put less' keyword </li>
- * 		<li> The first number </li>
- * 		<li> The second number </li>
- * </ol>
+ * The 'break my vagina' keyword is used to break out of statements and loops. 
+ * The 'break my vagina' command on it's own doesn't do anything. But it's used by other commands
  * 
  */
 
-public class PutLess implements Command
+public class BreakMyVagina implements Command
 {
 
 	@Override
 	public void run(String[] args, VariableStore vsRefrence, Scanner scRefrence) throws UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException 
 	{
 
-		
-		if(args.length < 3)
-			throw new TooFewArgumentsException("the put less command expects exactly three arguments");
-		
-		if(args.length > 3)
-			throw new TooManyArgumentsException("the put less command expects exactly three arguments");
-
-		
-		vsRefrence.substract(args[1], args[2]);
+		if(args.length > 1)
+			throw new TooManyArgumentsException("the 'break my vagina' command expects no arguments");
 		
 	};
-
+	
 }

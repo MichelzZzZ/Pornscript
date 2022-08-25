@@ -16,6 +16,11 @@ package com.pornscript.process;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import com.pornscript.commands.BreakMyVagina;
+import com.pornscript.commands.IfEquals;
+import com.pornscript.commands.IfLess;
+import com.pornscript.commands.IfMore;
+import com.pornscript.commands.IfNot;
 import com.pornscript.commands.Moan;
 import com.pornscript.commands.Put;
 import com.pornscript.commands.PutLess;
@@ -70,6 +75,11 @@ public class Validator
 		keywords.put("put more", new PutMore());
 		keywords.put("put less", new PutLess());
 		keywords.put("squeeze", new Squeeze());
+		keywords.put("break my vagina", new BreakMyVagina());
+		keywords.put("if i have", new IfEquals());
+		keywords.put("if i don't have", new IfNot());
+		keywords.put("if i have more than", new IfMore());
+		keywords.put("if i have less than", new IfLess());
 		
 		/*
 		 * 
@@ -97,7 +107,7 @@ public class Validator
 	{
 		
 		while(sc.hasNextLine())
-			runCommand(sc.nextLine().split(":"));
+			runCommand(sc.nextLine().split(":"), sc);
 		// Arguments of the command are seperated by a colon
 		
 	}
@@ -117,7 +127,7 @@ public class Validator
 	 * 
 	 */
 	
-	private void runCommand(String[] args) throws IllegalSyntaxException, UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException
+	private void runCommand(String[] args, Scanner sc) throws IllegalSyntaxException, UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException
 	{
 		
 		String keyword = args[0];
@@ -133,11 +143,11 @@ public class Validator
 		
 		// 3 - check for a valid keyword
 		if(keywords.containsKey(keyword))
-			keywords.get(keyword).run(args, vs);
+			keywords.get(keyword).run(args, vs, sc);
 
-		
 		// if it is neither of the above throw an exception
-		throw new IllegalSyntaxException(keyword + " isn't a valid keyword");
+		else
+			throw new IllegalSyntaxException(keyword + " isn't a valid keyword");
 		
 	}
 

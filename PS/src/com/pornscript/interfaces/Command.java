@@ -13,6 +13,8 @@
 */
 package com.pornscript.interfaces;
 
+import java.util.Scanner;
+
 import com.pornscript.exceptions.TooFewArgumentsException;
 import com.pornscript.exceptions.TooManyArgumentsException;
 import com.pornscript.exceptions.UnavailableAddressException;
@@ -31,6 +33,6 @@ import com.pornscript.process.VariableStore;
 @FunctionalInterface public interface Command
 {
 
-	public abstract void run(String[] args, VariableStore vsRefrence) throws UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException;
+	public abstract void run(String[] args, VariableStore vsRefrence, Scanner scRefrence) throws UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException;
 	
 }
