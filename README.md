@@ -66,7 +66,7 @@ to take user input use the 'your dick' keyword. in the following example it asks
 
 ![capture11](https://user-images.githubusercontent.com/109735783/185745831-50e291c3-7e9d-4fa4-b65e-913d206f2a67.PNG)
 
-# Concating strings
+# String Concatination
 
 ![capture12](https://user-images.githubusercontent.com/109735783/185789937-4475686c-ea3a-4078-969c-f724f689303b.PNG)
 
@@ -82,11 +82,7 @@ to take user input use the 'your dick' keyword. in the following example it asks
 
 ![capture15](https://user-images.githubusercontent.com/109735783/185789993-10e7ced2-b0d5-4a91-b19f-9d83a5d39384.PNG)
 
-# A program that takes two numbers from the user and adds them
-
-![capture16](https://user-images.githubusercontent.com/109735783/185790278-5a6ca2da-3ac4-4fee-ad33-859d887f882f.PNG)
-
-# Random number generating
+# Random number generation
 
 ![capture17](https://user-images.githubusercontent.com/109735783/186664645-6ecaafc8-145a-4956-b50f-a218c480423f.PNG)
 
