@@ -33,7 +33,7 @@ public class Moan implements Command
 	public void run(String[] args, VariableStore vsRefrence) throws UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException 
 	{
 
-		// Loop through arugments, translate them and print them
+		// iterate through all arguments and print them
 		
 		for(int i = 1; i < args.length; i++)
 			
