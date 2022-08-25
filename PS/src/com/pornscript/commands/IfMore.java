@@ -23,34 +23,39 @@ import com.pornscript.process.VariableStore;
 
 /**
  * 
- * The put less command substracts two numbers. it expects exactly
- * three arguments.<br>
- * 
- * <ol>
- * 		<li> The 'put less' keyword </li>
- * 		<li> The first number </li>
- * 		<li> The second number </li>
- * </ol>
+ * If x is larger than y, do something
  * 
  */
 
-public class PutLess implements Command
+public class IfMore implements Command
 {
 
 	@Override
 	public void run(String[] args, VariableStore vsRefrence, Scanner scRefrence) throws UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException 
 	{
 
-		
 		if(args.length < 3)
-			throw new TooFewArgumentsException("the put less command expects exactly three arguments");
+			throw new TooFewArgumentsException("the 'if i have more' command expects exactly three arguments");
 		
 		if(args.length > 3)
-			throw new TooManyArgumentsException("the put less command expects exactly three arguments");
-
+			throw new TooManyArgumentsException("the 'if i have more' command expects exactly three arguments");
 		
-		vsRefrence.substract(args[1], args[2]);
+		
+		// If the condition is false
+		
+		if(!vsRefrence.isLarger(args[1], args[2]))
+			
+			// Keep poping lines from the code until it reaches a break statement
+			
+			while(!scRefrence.nextLine().startsWith("break my vagina"));
+		
+		/*
+		 * 
+		 * Otherwise if the statement is true, it will normally execute the code
+		 * between the if statement and the break statement
+		 * 
+		 */
 		
 	};
-
+	
 }

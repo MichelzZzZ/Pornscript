@@ -1,4 +1,4 @@
-/**
+/*
  * 
  * Pornscript
  * 
@@ -8,34 +8,6 @@
  * Pornscript is in it's early stage and needs a lot to work on. The language is written in 
  * Java means you can run it on most operating systems.
  * 
- * I. Process:
- * 
- * 		1 - The pornscript program starts executing at the EntryPoint class which checks for basic things.
- * 		does the script file exist? does it contain the classic opening "WHAT ARE YOU DOING STEPBRO!!"?
- * 
- * 		2 - After that, the code goes to the validator. Which reads the code line by line, throw errors
- * 		if there's an invalid keyword. It's also where comments and empty lines gets ignored
- *  	
- *  	  - Second step is also done by the help of another class called the VairableStore, which is obiously
- *  		responsible for dealing with variables
- *  
- * II. Packages:
- * 
- * 		com.pornscript.commands
- * 				contains implementations of 'com.pornscript.interfaces.Command'. This package is home to
- * 				all keyword used by pornscript
- * 
- * 		com.pornscript.exceptions
- * 				contains extensions of 'java.lang.Exception' class. There lies some possible exceptions 
- * 				thrown by pornscript
- * 
- * 		com.pornscript.interfaces
- * 				for now it only contains the "Command" interface which takes a set of arguments and do a
- *				task based on them
- *
- * 		com.pornscript.process
- * 				This contains the entry point, validator and variable store
- * 
  * -----------------------------------------------------------------------------------------
  * 
 */
@@ -44,6 +16,11 @@ package com.pornscript.process;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import com.pornscript.commands.BreakMyVagina;
+import com.pornscript.commands.IfEquals;
+import com.pornscript.commands.IfLess;
+import com.pornscript.commands.IfMore;
+import com.pornscript.commands.IfNot;
 import com.pornscript.commands.Moan;
 import com.pornscript.commands.Put;
 import com.pornscript.commands.PutLess;
@@ -98,6 +75,11 @@ public class Validator
 		keywords.put("put more", new PutMore());
 		keywords.put("put less", new PutLess());
 		keywords.put("squeeze", new Squeeze());
+		keywords.put("break my vagina", new BreakMyVagina());
+		keywords.put("if i have", new IfEquals());
+		keywords.put("if i don't have", new IfNot());
+		keywords.put("if i have more than", new IfMore());
+		keywords.put("if i have less than", new IfLess());
 		
 		/*
 		 * 
@@ -125,7 +107,7 @@ public class Validator
 	{
 		
 		while(sc.hasNextLine())
-			runCommand(sc.nextLine().split(":"));
+			runCommand(sc.nextLine().split(":"), sc);
 		// Arguments of the command are seperated by a colon
 		
 	}
@@ -145,7 +127,7 @@ public class Validator
 	 * 
 	 */
 	
-	private void runCommand(String[] args) throws IllegalSyntaxException, UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException
+	private void runCommand(String[] args, Scanner sc) throws IllegalSyntaxException, UnavailableAddressException, TooManyArgumentsException, TooFewArgumentsException
 	{
 		
 		String keyword = args[0];
@@ -161,11 +143,11 @@ public class Validator
 		
 		// 3 - check for a valid keyword
 		if(keywords.containsKey(keyword))
-			keywords.get(keyword).run(args, vs);
+			keywords.get(keyword).run(args, vs, sc);
 
-		
 		// if it is neither of the above throw an exception
-		throw new IllegalSyntaxException(keyword + " isn't a valid keyword");
+		else
+			throw new IllegalSyntaxException(keyword + " isn't a valid keyword");
 		
 	}
 
