@@ -89,7 +89,7 @@ to take user input use the 'your dick' keyword. in the following example it asks
 
 ![capture14](https://user-images.githubusercontent.com/109735783/186665002-565a1722-93aa-4c5d-9e86-ea482c99af08.PNG)
 
-Remember to break out of the statements with the 'break my vagina' keyword, to avoid exceptions
+Remember to break out of the statements with the 'break my vagina' keyword
 
 # Copying variables
 
