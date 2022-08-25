@@ -62,32 +62,34 @@ to take user input use the 'your dick' keyword. in the following example it asks
 ![capture7](https://user-images.githubusercontent.com/109735783/185734580-29a47dfc-65c9-42e7-8ec1-2a6117d9f92f.PNG)
 ![capture8](https://user-images.githubusercontent.com/109735783/185734582-26d27132-500c-4f4f-b58c-cdce2d58e1d7.PNG)
 
-# Copying variables
-
-![capture11](https://user-images.githubusercontent.com/109735783/185745831-50e291c3-7e9d-4fa4-b65e-913d206f2a67.PNG)
-
-# String Concatination
-
-![capture12](https://user-images.githubusercontent.com/109735783/185789937-4475686c-ea3a-4078-969c-f724f689303b.PNG)
-
 # Addition
 
-![capture13](https://user-images.githubusercontent.com/109735783/185789974-cac38700-4ced-49ef-bd7b-9763b0fe1821.PNG)
+![capture9](https://user-images.githubusercontent.com/109735783/185789974-cac38700-4ced-49ef-bd7b-9763b0fe1821.PNG)
 
 # Substraction
 
-![capture14](https://user-images.githubusercontent.com/109735783/185789983-47f5a68b-fac1-4503-8d51-ff6cde159fb7.PNG)
+![capture10](https://user-images.githubusercontent.com/109735783/185789983-47f5a68b-fac1-4503-8d51-ff6cde159fb7.PNG)
 
-# Comments
+# String Concatination
 
-![capture15](https://user-images.githubusercontent.com/109735783/185789993-10e7ced2-b0d5-4a91-b19f-9d83a5d39384.PNG)
+![capture11](https://user-images.githubusercontent.com/109735783/185789937-4475686c-ea3a-4078-969c-f724f689303b.PNG)
 
 # Random number generation
 
-![capture17](https://user-images.githubusercontent.com/109735783/186664645-6ecaafc8-145a-4956-b50f-a218c480423f.PNG)
+![capture12](https://user-images.githubusercontent.com/109735783/186664645-6ecaafc8-145a-4956-b50f-a218c480423f.PNG)
 
 # Conditional statements
 
-![capture18](https://user-images.githubusercontent.com/109735783/186664997-4c2c685f-9ea7-432b-b914-c75c70e7e0c8.PNG)
+![capture13](https://user-images.githubusercontent.com/109735783/186664997-4c2c685f-9ea7-432b-b914-c75c70e7e0c8.PNG)
 
-![capture19](https://user-images.githubusercontent.com/109735783/186665002-565a1722-93aa-4c5d-9e86-ea482c99af08.PNG)
+![capture14](https://user-images.githubusercontent.com/109735783/186665002-565a1722-93aa-4c5d-9e86-ea482c99af08.PNG)
+
+Remember to break out of the statements with the 'break my vagina' keyword, to avoid exceptions
+
+# Copying variables
+
+![capture15](https://user-images.githubusercontent.com/109735783/185745831-50e291c3-7e9d-4fa4-b65e-913d206f2a67.PNG)
+
+# Comments
+
+![capture16](https://user-images.githubusercontent.com/109735783/185789993-10e7ced2-b0d5-4a91-b19f-9d83a5d39384.PNG)
