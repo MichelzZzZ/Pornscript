@@ -85,3 +85,13 @@ to take user input use the 'your dick' keyword. in the following example it asks
 # A program that takes two numbers from the user and adds them
 
 ![capture16](https://user-images.githubusercontent.com/109735783/185790278-5a6ca2da-3ac4-4fee-ad33-859d887f882f.PNG)
+
+# Random number generating
+
+![capture17](https://user-images.githubusercontent.com/109735783/186664645-6ecaafc8-145a-4956-b50f-a218c480423f.PNG)
+
+# Conditional statements
+
+![capture18](https://user-images.githubusercontent.com/109735783/186664997-4c2c685f-9ea7-432b-b914-c75c70e7e0c8.PNG)
+
+![capture19](https://user-images.githubusercontent.com/109735783/186665002-565a1722-93aa-4c5d-9e86-ea482c99af08.PNG)
