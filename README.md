@@ -30,7 +30,7 @@ by running the previous command, it will automaticly create a file in the curren
 ![capture3](https://user-images.githubusercontent.com/109735783/185615434-dba9f79f-a6f8-4529-93d7-87fb6bea1c89.PNG)
 
 	
-it may ask you to select a default app for opening '.ps (pornscript)' folders, you can choose any text editor you prefer. I'll go with notepad
+it may ask you to select a default app for opening '.ps (pornscript)' files, you can choose any text editor you prefer. I'll go with notepad
 	
 now let's write a simple pornscript program
 	
